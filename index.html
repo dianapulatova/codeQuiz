@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Code Quiz!</title>
+    <link rel="stylesheet" type="text/css" href="style.css">
+   
+</head>
+<body>
+    <div class="conatiner">
+        <div class="heading">
+            <a href="highscore.html"> View Highscores</a>
+        </div>
+         <div>
+            <h2 id="timer"> Time: <span id="countdown"> 0 </span></h2> 
+               <!-- span allows 0 to be changed on js -->
+         </div>  
+        <br>
+        <div id="startingPage">
+            <h1>Coding Quiz Challenge</h1>
+            <p>Answer the following JavaScript-related questions within the time limit. Keep in mind that incorrect answers will penalize your score time by ten seconds. </p>
+            <button id="startButton">Start Quiz</button>
+
+        </div>
+
+        <div id="quiz"  class="hide">
+            <div id="questions"></div>
+            <div id="buttons"></div>
+            <div id="result"></div>
+        </div>
+
+        <div id="gameOver" class="hide">
+            <!-- <div id="finalScore"></div> -->
+            <h3>All Done!</h3>
+            <p>Your final score is <span id="finalscore">  </span></p> 
+            <p>Enter initials <input type="text" size = "30" placeholder="" name="initials" id="initials"/> <button id="submitScore">Submit Score</button></p> 
+
+         <!-- needs show the fianl score after the "Your final score is" -->
+                   
+                    
+        </div>
+
+       
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
