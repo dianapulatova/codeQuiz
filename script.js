@@ -3,7 +3,7 @@ var highscore = 0;
 var finalscore = document.getElementById("finalscore");
 var startQuizPage = document.getElementById("startingPage");
 var gameOver = document.getElementById("gameOver");
-
+var initialsHighscore = document.getElementById("initials");
 var startQuizButton = document.getElementById("startButton");
 var quizTimer = document.getElementById("timer");
 var quiz = document.getElementById("quiz");
@@ -124,4 +124,12 @@ function endGame(){
 ]; 
 
 startQuizButton.onclick = startGame; 
+
+
+    // localStorage.setItem('initials',JSON.stringify(initials));
+
+    // initialsHighscore= JSON.parse(localStorage.getItem('initials'));
+ 
+  
+
 
